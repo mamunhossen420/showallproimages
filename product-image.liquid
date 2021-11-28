@@ -1,0 +1,101 @@
+
+<!----
+{//% for image in product.images %}
+   <img  src="{//{// image.src | product_img_url:'500x' }}">
+{//% endfor %}
+---->
+
+
+
+<div class="dev_mamun_">
+{% if product.images[0] != '' and product.images[1] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[0] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[1] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+
+{% if product.images[2] != '' and product.images[3] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[2] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[3] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+
+{% if product.images[4] != '' and product.images[5] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[4] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[5] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+  
+{% if product.images[6] != '' and product.images[7] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[6] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[7] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+
+{% if product.images[8] != '' and product.images[9] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[8] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[9] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+
+{% if product.images[10] != '' and product.images[11] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[10] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[11] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+  
+{% if product.images[12] != '' and product.images[13] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[12] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[13] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+  
+{% if product.images[14] != '' and product.images[15] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[14] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[15] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+  
+{% if product.images[16] != '' and product.images[17] != '' %}
+<div style="display:flex;">
+	<img style="width:50%;" src="{{ product.images[16] | product_img_url: 'medium' }}"/>
+  	<img style="width:50%;" src="{{ product.images[17] | product_img_url: 'medium' }}"/>
+</div>
+{% endif %}
+
+</div>
+
+//css here 
+
+/**dev_mamun_***/
+@media screen and (min-width:767px){
+  .product__photos{
+  	display:none !important;
+  }
+  .product-single__sticky{
+    position:-webkit-static !important;
+    position: static !important;
+  }
+  .page-width {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width:766px){
+  .dev_mamun_ img{
+  	display:none !important;
+  }
+}
+.dev_mamun_ img[src*="gif"] {
+    display:none !important;
+}
+
+
